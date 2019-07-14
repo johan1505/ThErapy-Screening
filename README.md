@@ -19,5 +19,5 @@ Software Used:
  - Android Studio
  - Java
  - XML files - used for the design of the app's UI
- - Google's Firebase - used to implement authentication using Google account
+ - Google's Firebase - used to implement authentication using a Google account
 
