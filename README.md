@@ -1,6 +1,6 @@
 # ThErapy-Screening
 
-ThErapy Screening is an android app that improves the colletion of information from patients of Children's Mental Heatlh Therapists
+ThErapy Screening is an android app that improves the colletion of information from patients of Child Therapists
   
 What it does?
 
@@ -19,5 +19,5 @@ Software Used:
  - Android Studio
  - Java
  - XML files - used for the design of the app's UI
- - Google's Firebase - used to implement authentication using Google account
+ - Google's Firebase - used to implement authentication using a Google account
 
