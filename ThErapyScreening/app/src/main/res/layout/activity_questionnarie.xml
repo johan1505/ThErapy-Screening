@@ -80,7 +80,6 @@
             android:visibility="visible" />
 
         <NumberPicker
-            android:background="@drawable/signinbutton"
             android:id="@+id/age_parent_numberPicker"
             android:layout_width="70dp"
             android:layout_height="100dp"
