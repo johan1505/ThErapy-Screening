@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/gray"
+    android:background="@color/white"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="23dp"
-        android:textColor="@color/white"
+        android:textColor="@color/blue"
         android:layout_marginTop="20dp"
         android:padding="45dp"/>
 
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:text="First Name"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -40,7 +40,7 @@
             android:layout_below="@+id/firstName_parent_text_view"
             android:layout_marginLeft="60dp"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -51,7 +51,7 @@
             android:layout_marginLeft="80dp"
             android:layout_toRightOf="@+id/firstName_parent_text_view"
             android:text="Last Name"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -63,7 +63,7 @@
             android:layout_marginLeft="35dp"
             android:layout_toRightOf="@id/firstName_parent_editText_view"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -75,11 +75,12 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="40dp"
             android:text="Age"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
         <NumberPicker
+            android:background="@drawable/signinbutton"
             android:id="@+id/age_parent_numberPicker"
             android:layout_width="70dp"
             android:layout_height="100dp"
@@ -96,7 +97,7 @@
             android:layout_marginTop="40dp"
             android:layout_toRightOf="@id/age_parent_numberPicker"
             android:text="Sex"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -114,9 +115,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/age_parent_text_view"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="95dp"
+            android:layout_marginTop="90dp"
             android:text="Relation to the child"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp" />
 
         <NumberPicker
@@ -125,7 +126,7 @@
             android:layout_height="100dp"
             android:layout_below="@id/sex_parent_numberPicker"
             android:layout_marginLeft="67dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/relationToChild_text_view"></NumberPicker>
 
         <TextView
@@ -136,7 +137,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="50dp"
             android:text="What is your main concern about your child's mental health?"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp" />
 
         <EditText
@@ -146,7 +147,7 @@
             android:layout_below="@id/MainConcernQuestion_text_view"
             android:layout_marginLeft="60dp"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp" />
 
 
@@ -157,7 +158,8 @@
             android:layout_below="@+id/MainConcernAnswer_editText_view"
             android:layout_marginLeft="60dp"
             android:text="First Name (Child)"
-            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -168,7 +170,7 @@
             android:layout_below="@+id/firstName_child_text_view"
             android:layout_marginLeft="60dp"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -179,7 +181,8 @@
             android:layout_below="@+id/MainConcernAnswer_editText_view"
             android:layout_toRightOf="@+id/firstName_child_text_view"
             android:text="Last Name (Child)"
-            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
             android:layout_marginLeft="27dp"
             android:textSize="15dp"
             android:visibility="visible" />
@@ -193,7 +196,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginLeft="27dp"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -205,7 +208,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="30dp"
             android:text="Age\n(Child)"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -221,12 +224,12 @@
             android:id="@+id/sex_child_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/age_child_numberPicker"
             android:layout_below="@id/firstName_child_editText_view"
             android:layout_marginLeft="27dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/age_child_numberPicker"
             android:text="Sex\n(Child)"
-            android:textColor="@color/white"
+            android:textColor="@color/blue"
             android:textSize="15dp"
             android:visibility="visible" />
 
@@ -239,6 +242,8 @@
             android:layout_toRightOf="@+id/sex_child_text_view"></NumberPicker>
 
         <Button
+            android:background="@drawable/buttonsquestions"
+            android:textColor="@color/white"
             android:id="@+id/never_button"
             android:layout_width="120dp"
             android:layout_height="60dp"
@@ -247,6 +252,8 @@
             android:text="Never" />
 
         <Button
+            android:background="@drawable/buttonsquestions"
+            android:textColor="@color/white"
             android:id="@+id/sometimes_button"
             android:layout_width="120dp"
             android:layout_height="60dp"
@@ -256,6 +263,8 @@
             android:text="Sometimes" />
 
         <Button
+            android:background="@drawable/buttonsquestions"
+            android:textColor="@color/white"
             android:id="@+id/always_button"
             android:layout_width="120dp"
             android:layout_height="60dp"
@@ -267,19 +276,15 @@
     </RelativeLayout>
 
     <Button
+        android:background="@drawable/buttonsquestions"
+        android:textColor="@color/white"
         android:id="@+id/next_button"
         android:clickable="false"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Next"
         android:textSize="23dp"
-        android:textColor="@color/white"
         android:layout_marginTop="740dp"
         android:layout_marginLeft="260dp"/>
-
-    <TextView
-        android:id="@+id/test_Output"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

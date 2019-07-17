@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements ViewSwitcher.OnCl
     SignInButton signInButton;
     Button signOutButton;
     Button continueButton;
-
     // SignInClient used to let the user sign in using his/her google account
     GoogleSignInClient mGoogleSignInClient; //Make it static? How can other activities use the info from this object??
     private static final String TAG = "SignInActivity";
@@ -57,12 +57,13 @@ public class MainActivity extends AppCompatActivity implements ViewSwitcher.OnCl
         signOutButton.setOnClickListener(this);
 
         continueButton = findViewById(R.id.continue_button);
-        continueButton.setVisibility(View.GONE);
+        continueButton.setVisibility(View.INVISIBLE);
         continueButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id.continue_button:
                 continueToQuestionnarieActvity();

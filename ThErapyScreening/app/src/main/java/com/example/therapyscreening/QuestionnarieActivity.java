@@ -55,7 +55,6 @@ public class QuestionnarieActivity extends AppCompatActivity implements View.OnC
         parentInfoCollected = false;
         parentAndChildAnswers.clear();
 
-
         //Questions Text View
         questionsTextView = (TextView) findViewById(R.id.questions_textView);
         questionsTextView.setText("Parent/Guardian please fill out the following information");
